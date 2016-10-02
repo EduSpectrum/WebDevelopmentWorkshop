@@ -65,7 +65,7 @@ var validateUserName = function() {
 
 var validateEmailId = function() {
 	var data = this.value;
-	if((data.indexOf('@') > 0)&&(data.substring(data.length-4, data.length) == '.com')&&((data.indexOf('.') - data.indexOf('a')) > 1)) {
+	if((data.indexOf('@') > 0)&&(data.substring(data.length-4, data.length) == '.com')&&((data.indexOf('.') - data.indexOf('@')) > 1)) {
 		validInput(this);
 	} else {
 		invalidInput(this);

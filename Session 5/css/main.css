@@ -3,10 +3,11 @@
     min-height: 100px;
     background-color: red;
     border: 1px solid black;
-    -ms-transform: translate(50px,100px); /* IE 9 */
-    -webkit-transform: translate(50px,100px); /* Safari */
-    transform: translate(50px,100px); /* Standard syntax */
+    -ms-transform: translate(50px,100px);       /* IE 9 */
+    -webkit-transform: translate(50px,100px);   /* Safari */
+    transform: translate(50px,100px);           /* Standard syntax */
 }
+
 .unrotated {
     max-width: 300px;
     min-height: 100px;
@@ -21,10 +22,11 @@
     color:white;
     background-color: black;
     border: 1px solid white;
-    -ms-transform: rotate(20deg); /* IE 9 */
-    -webkit-transform: rotate(20deg); /* Safari */
-    transform: rotate(20deg); /* Standard syntax */
+    -ms-transform: rotate(20deg);               /* IE 9 */
+    -webkit-transform: rotate(20deg);           /* Safari */
+    transform: rotate(20deg);                   /* Standard syntax */
 }
+
 .scale {
     margin: 150px;
     max-width: 200px;
@@ -32,10 +34,11 @@
     background-color: yellow;
     border: 1px solid black;
     border: 1px solid black;
-    -ms-transform: scale(2,3); /* IE 9 */
-    -webkit-transform: scale(2,3); /* Safari */
-    transform: scale(2,3); /* Standard syntax */
+    -ms-transform: scale(2,3);                  /* IE 9 */
+    -webkit-transform: scale(2,3);              /* Safari */
+    transform: scale(2,3);                      /* Standard syntax */
 }
+
 .unskew , .skew{
 	margin-left: 50px;
     max-width: 300px;
@@ -46,9 +49,9 @@
 }
 
 .skew {
-    -ms-transform: skew(20deg,10deg); /* IE 9 */
-    -webkit-transform: skew(20deg,10deg); /* Safari */
-    transform: skew(20deg,10deg); /* Standard syntax */
+    -ms-transform: skew(20deg,10deg);           /* IE 9 */
+    -webkit-transform: skew(20deg,10deg);       /* Safari */
+    transform: skew(20deg,10deg);               /* Standard syntax */
 }
 .rotation{
 	    max-width: 300px;
@@ -56,8 +59,8 @@
     background-color: blue;
     color: white;
     border: 1px solid black;
-    -webkit-transform: rotateZ(90deg); /* Similary use rotateX and rotateY */
-    transform: rotateZ(90deg); /* Standard syntax */
+    -webkit-transform: rotateZ(90deg);          /* Similary use rotateX and rotateY */
+    transform: rotateZ(90deg);                  /* Standard syntax */
 }
 .linear {
     max-width: 100px;
@@ -65,23 +68,19 @@
     background: red;
     -webkit-transition: max-width 2s; /* For Safari 3.1 to 6.0 */
     transition: max-width 2s;
-
     -webkit-transition-timing-function: linear;
-    /*
--webkit-transition-timing-function: ease;
--webkit-transition-timing-function: ease-in;
--webkit-transition-timing-function: ease-out;
--webkit-transition-timing-function: ease-in-out; */
+    /*-webkit-transition-timing-function: ease;
+    -webkit-transition-timing-function: ease-in;
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-timing-function: ease-in-out;*/
  
 transition-timing-function: linear;
-/* 
-transition-timing-function: ease;
-transition-timing-function: ease-in;
-transition-timing-function: ease-out;
-transition-timing-function: ease-in-out;
-*/
-/* transition-delay: 1s; */
-/*transition: width 2s linear 1s;*/ 		
+    /*transition-timing-function: ease;
+    transition-timing-function: ease-in;
+    transition-timing-function: ease-out;
+    transition-timing-function: ease-in-out;*/
+    /* transition-delay: 1s; */
+    /*transition: width 2s linear 1s;*/ 		
 }
 
 .linear:hover {
@@ -92,15 +91,15 @@ transition-timing-function: ease-in-out;
     min-height: 100px;
     background-color: red;
     position: relative;
-    -webkit-animation-name: example; /* Chrome, Safari, Opera */
-    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    -webkit-animation-name: example;    /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s;     /* Chrome, Safari, Opera */
     animation-name: example;
     animation-duration: 4s;
     /* animation-iteration-count: 3; */
     /* animation-direction: reverse; */
     /* animation-direction: alternate; */
     /* animation-timing-function: linear; */ 
-    /*  animation: example 5s linear 2s infinite alternate; */
+    /* animation: example 5s linear 2s infinite alternate; */
 }
 
 /* Chrome, Safari, Opera */
@@ -114,20 +113,18 @@ transition-timing-function: ease-in-out;
     from {background-color: orange;}
     to {background-color: blue;}
 }
-/*
-@keyframes example {
+
+/*@keyframes example {
     0%   {background-color: red;}
     25%  {background-color: yellow;}
     50%  {background-color: blue;}
     100% {background-color: green;}
-}
-*/
-/*
-@keyframes example {
+}*/
+
+/*@keyframes example {
     0%   {background-color: red; left:0px; top:0px;}
     25%  {background-color: yellow; left:200px; top:0px;}
     50%  {background-color: blue; left:200px; top:200px;}
     75%  {background-color: green; left:0px; top:200px;}
     100% {background-color: red; left:0px; top:0px;}
-}
-*/
+}*/
