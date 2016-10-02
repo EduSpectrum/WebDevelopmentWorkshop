@@ -1,0 +1,38 @@
+<!doctype HTML>
+<html>
+	<head>
+		<!-- Specifying character set -->
+		<meta charset="utf-8">
+		<!-- Page title, visible in the tab -->
+		<title> JavaScript Applications </title>
+		<!-- Shortcut icon present in the tab -->
+		<link rel="icon" href="./../Session 1/images/pokemon.ico">
+		<!-- Importing Bootstrap CSS file -->
+		<link rel="stylesheet" type="text/css" href="./../Session 4/css/bootstrap.min.css">
+		<!-- Importing JQuery script file -->
+		<script src="./../Session 4/js/jquery.min.js"></script>
+		<!-- Importing Bootstrap js file. This should be after Jquery -->
+		<script src="./../Session 4/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="jumbotron">
+				<h1 class="mainHeading"> My Heading </h1>
+				<p id="mainSubHeading"> My sub heading </p>
+				<button id="myButton" type="button" class="btn btn-success" onclick="this.className = 'btn btn-danger'"> Modify content </button>
+			</div>
+		</div>
+		<div class="container">
+			<img id="pokemonAsh">
+		</div>
+		<div class="container" id="nested">
+			<p> Nested selectors. </p>
+			<p> There are multiple paragraphs in this div. </p>
+		</div>
+		<div class="container" id="toggleHidden">
+			<input type="text" id="userName">
+			<input type="text" id="emailId">
+		</div>
+		<script src="./js/1.js"></script>
+	</body>
+</html>
