@@ -27,11 +27,12 @@ Build an HTML page that meets the following requirements. (3+4+3)
 ### Assignment 2 : 
 
 Build an HTML page that meets the following requirements. (5+5)
-1. The first div should contain a form similar to the facebook signup form as shown in this figure.
+
+* The first div should contain a form similar to the facebook signup form as shown in this figure.
 
 ![Signup parameters](Resources/1.jpg)
 
-2. The second div should contain a table as shown in the figure attached. Take note of the widths.
+* The second div should contain a table as shown in the figure attached. Take note of the widths.
 
 ![Table structure](Resources/2.jpg)
 
