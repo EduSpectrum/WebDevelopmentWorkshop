@@ -20,7 +20,7 @@
 ### Assignment 1 : 
 
 Build an HTML page that meets the following requirements. (3+4+3)
-1. '<h2>' tag as heading having text 'My Profile' which should be center aligned.
+1. h2 tag as heading having text 'My Profile' which should be center aligned.
 2. Below this add an image of yourself of width '200px' and the image should be linked to your Facebook profile.
 3. The image should be followed by an 'ordered list' that lists your achievements ( atleast 3 ).
 
