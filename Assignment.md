@@ -28,8 +28,9 @@ Build an HTML page that meets the following requirements. (3+4+3)
 
 Build an HTML page that meets the following requirements. (5+5)
 1. The first div should contain a form similar to the facebook signup form as shown in this figure.
+![Signup parameters](Resources/1.jpg)
 2. The second div should contain a table as shown in the figure attached. Take note of the widths.
-
+![Table structure](Resources/2.jpg)
 ### Assignment 3 : 
 
 Beautify the page that you had made in Assignment 1. You may or may not, add background images, modify text size & font, add paddings and margins, use an external library add animations etc. (10).
@@ -43,7 +44,8 @@ Build a gallery using bootstrap that will show a list of 10 images. This page sh
 
 Build a web app that lets people save notes. Each note contains a title and some content. The main page will have two columns, the title and the time at which the note was created. This web app should support the following features : Add new notes, Edit old notes, Delete old notes, Sort notes by newest first or oldest first. ( 10 marks for each + 10 marks for design ).
 
-__Sample code using JQuery to interact with the backend.__ ( Include JQuery in your page before calling its %.post() function )
+__Sample code using JQuery to interact with the backend.__ 
+_( Include JQuery in your page before calling its $.post() function )_
 
 ` <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>`
 
