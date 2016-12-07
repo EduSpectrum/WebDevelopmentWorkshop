@@ -43,7 +43,8 @@ Build a gallery using bootstrap that will show a list of 10 images. This page sh
 
 Build a web app that lets people save notes. Each note contains a title and some content. The main page will have two columns, the title and the time at which the note was created. This web app should support the following features : Add new notes, Edit old notes, Delete old notes, Sort notes by newest first or oldest first. ( 10 marks for each + 10 marks for design ).
 
-__Sample code using JQuery to interact with the backend.__
+__Sample code using JQuery to interact with the backend.__ ( Include JQuery in your page before calling its %.post() function )
+
 ` <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>`
 
 * Authenticating the app
