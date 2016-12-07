@@ -47,17 +47,17 @@ __Sample code using JQuery to interact with the backend.__
 
 
 1. Authenticating the app
-
-var obj = {
-	email 	: 'quotemridul@gmail.com',
-	rollNo 	: '14MT10024'
-};
-$.post( "http://www.eduspectrum.com/api/authenticate.php", obj, function( data ) {
-	// To view your sessionId
-	console.log(data.sessionId);
-});
-
-// Here data is an object that contains a sessionId.
+```javascript
+	var obj = {
+		email 	: 'abc@xyz.com',
+		rollNo 	: '14AB10001'
+	}
+	$.post( "http://www.eduspectrum.com/api/authenticate.php", obj, function( data ) {
+		data = JSON.parse(data);		// A string is returned which we convert to an object.
+		console.log(data);				// To view console, right click and choose inspect element option. 
+		var sessionId = data.sessionId; 
+	});
+```
 
 2. Getting all posts 
 
