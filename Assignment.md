@@ -45,8 +45,7 @@ Build a web app that lets people save notes. Each note contains a title and some
 
 __Sample code using JQuery to interact with the backend.__
 
-
-1. Authenticating the app
+* Authenticating the app
 ```javascript
 	var obj = {
 		email 	: 'abc@xyz.com',
@@ -58,43 +57,44 @@ __Sample code using JQuery to interact with the backend.__
 		var sessionId = data.sessionId; 
 	});
 ```
-
-2. Getting all posts 
-
-var obj = {
-	sessionId : 'YourSessionId obtained earlier',
-	rollNo : 'Your roll number'
-}
-$.post( "http://www.eduspectrum.com/api/getAll.php", obj, function( data ) {
-	var newObj = JSON.parse(data);
-	for(var i=0; i < newObj.length; i++) {
-		console.log(newObj[i]);
+* Getting all posts 
+```javascript
+	var obj = {
+		sessionId : 'abcabcabcabcabca',
+		rollNo 	  : '14AB10001'
 	}
-});
-
-// The data returned is an array of objects. Each object contains a title, a description and a createdAt field. 
-
-3. Create Post
-var post = {
-	sessionId : 'YourSessionId obtained earlier',
-	rollNo : 'Your roll number',
-	title : 'Post Title',
-	description : 'Description of the post.'
-}
-$.post( "http://www.eduspectrum.com/api/create.php", post, function(data) {
-	console.log(data);
-})
-
-// Here data is the object. It will contain a description, a title and a createdAt field. You do not need to send in this data. It will be added by the server and returned to you. You need to manage displaying this data though.
-
-4. Delete Post
-var post = {
-	sessionId : 'YourSessionId obtained earlier',
-	rollNo	: 'Your roll number'
-	createdAt : 'The created at time.'
-}
-$.post( "http://www.eduspectrum.com/api/delete.php", post, function(data) {
-	console.log(data);
-})
-
-// If data == true post was deleted successfully otherwise there was some error. 
+	$.post( "http://www.eduspectrum.com/api/getAll.php", obj, function( data ) {
+		var posts = JSON.parse(data);
+		for(var i=0; i < posts.length; i++) {
+			console.log(posts[i].title);
+			console.log(posts[i].description);
+			console.log(posts[i].createdAt);
+		}
+	});
+```
+* Create new post
+```javascript
+	var post = {
+		sessionId 	: 'abcabcabcabcabca',
+		rollNo 	  	: '14AB10001',
+		title 		: 'Reminder',
+		description : 'Buy vegetables on the way home'
+	}
+	$.post( "http://www.eduspectrum.com/api/create.php", post, function(data) {
+		var postData = JSON.parse(data);
+		console.log(postData.title);			// Reminder
+		console.log(postData.description);		// Buy vegetables on the way home
+		console.log(postData.createdAt);		// Unix timestamp
+	})
+```
+* Delete Post
+```javascript
+	var post = {
+		sessionId 	: 'abcabcabcabcabca',
+		rollNo		: '14AB10001',
+		createdAt 	: '1481086391'
+	}
+	$.post( "http://www.eduspectrum.com/api/delete.php", post, function(data) {
+		console.log(data);
+	})
+```
