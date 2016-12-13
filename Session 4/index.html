@@ -32,22 +32,36 @@
 				opacity: 0;
 			}
 			.item:hover p {
+				animation-name : textAnimate;
+				animation-duration : 1000ms;
+				animation-fill-mode : forwards;
 				-moz-animation-name : textAnimate;
 				-moz-animation-duration : 1000ms;
 				-moz-animation-fill-mode : forwards;
 			}
 			.item:hover img {
+				animation-name : imageAnimate;
+				animation-duration : 1000ms;
+				animation-fill-mode : forwards;
 				-moz-animation-name : imageAnimate;
 				-moz-animation-duration : 1000ms;
 				-moz-animation-fill-mode : forwards;
 			}
 			@keyframes imageAnimate {
-				from { -moz-transform: scale3d(1,1,1); }
-				to { -moz-transform: scale3d(0.8,0.8,1); }
+				from { 
+					transform: scale3d(1,1,1);
+					-moz-transform: scale3d(1,1,1);
+				} to { 
+					transform: scale3d(0.8,0.8,1);
+					-moz-transform: scale3d(0.8,0.8,1);
+				}
 			}
 			@keyframes textAnimate {
-				from { opacity: 0; }
-				to { opacity: 1.0; }
+				from { 
+					opacity: 0; 
+				} to { 
+					opacity: 1.0;
+				}
 			}
 		</style>
 
