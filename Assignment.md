@@ -60,7 +60,7 @@ _( Include JQuery in your page before calling its $.post() function )_
 		email 	: 'abc@xyz.com',
 		rollNo 	: '14AB10001'
 	}
-	$.post( "http://www.eduspectrum.com/api/authenticate.php", obj, function( data ) {
+	$.post( "https://www.eduspectrum.com/api/authenticate.php", obj, function( data ) {
 		data = JSON.parse(data);		// A string is returned which we convert to an object.
 		console.log(data);				// To view console, right click and choose inspect element option. 
 		var sessionId = data.sessionId; 
@@ -72,7 +72,7 @@ _( Include JQuery in your page before calling its $.post() function )_
 		sessionId : 'abcabcabcabcabca',
 		rollNo 	  : '14AB10001'
 	}
-	$.post( "http://www.eduspectrum.com/api/getAll.php", obj, function( data ) {
+	$.post( "https://www.eduspectrum.com/api/getAll.php", obj, function( data ) {
 		var posts = JSON.parse(data);
 		for(var i=0; i < posts.length; i++) {
 			console.log(posts[i].title);
@@ -89,7 +89,7 @@ _( Include JQuery in your page before calling its $.post() function )_
 		title 		: 'Reminder',
 		description : 'Buy vegetables on the way home'
 	}
-	$.post( "http://www.eduspectrum.com/api/create.php", post, function(data) {
+	$.post( "https://www.eduspectrum.com/api/create.php", post, function(data) {
 		var postData = JSON.parse(data);
 		console.log(postData.title);			// Reminder
 		console.log(postData.description);		// Buy vegetables on the way home
@@ -103,7 +103,7 @@ _( Include JQuery in your page before calling its $.post() function )_
 		rollNo		: '14AB10001',
 		createdAt 	: '1481086391'
 	}
-	$.post( "http://www.eduspectrum.com/api/delete.php", post, function(data) {
+	$.post( "https://www.eduspectrum.com/api/delete.php", post, function(data) {
 		console.log(data);
 	})
 ```
